@@ -49,6 +49,12 @@ $  docker-compose up -d
 
 6. Start the App
 
+7. Run the SEED request to populate tables
+
+```bash
+$  localhost:3000/api/v2/seed
+```
+
 ```bash
 # development
 $ npm run start
