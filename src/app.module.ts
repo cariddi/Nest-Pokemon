@@ -7,11 +7,13 @@ import { CommonModule } from './common/common.module';
 import { SeedModule } from './seed/seed.module';
 import { ConfigModule } from '@nestjs/config';
 import { EnvConfigutarion } from './config/env.config';
+import { JoiValidationSchema } from './config/joi.schemaValidation';
 
 @Module({
   imports: [
     ConfigModule.forRoot({
       load: [EnvConfigutarion],
+      validationSchema: JoiValidationSchema,
     }), // must be placed on top
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'public'),

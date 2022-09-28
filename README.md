@@ -47,13 +47,23 @@ $  docker pull mongo
 $  docker-compose up -d
 ```
 
-6. Start the App
+6. Clone file **.env.template** and rename it to **.env**
 
-7. Run the SEED request to populate tables
+7. Fill the env variables defined in **.env**
+
+8. Start the App
+
+```bash
+$  yarn start:dev
+```
+
+9. Run the SEED request to populate tables
 
 ```bash
 $  localhost:3000/api/v2/seed
 ```
+
+## Starting Modes
 
 ```bash
 # development
