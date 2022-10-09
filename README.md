@@ -93,3 +93,13 @@ $ npm run test:cov
 
 - MongoDB
 - Nest
+
+# Production Build
+
+1. Create file `.env.prod file`
+2. Fill enviroment variables for prod
+3. Create new image:
+
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
